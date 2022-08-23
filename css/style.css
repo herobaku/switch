@@ -3,6 +3,7 @@
     --white: #fff;
     --green: #53d153;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -83,6 +84,51 @@ form button {
 }
 /* end */
 
+.what_we_do {
+    padding: 25px 15px;
+}
+.title_head {
+    text-align: center;
+}
+.title_head > h2 {
+    font: 300 1.2em Montserrat;
+    word-spacing: 4px;
+    color: #828181;
+    text-transform: uppercase;
+}
+.line {
+    width: 43px;
+    height: 2px;
+    background: #818181;
+    margin: 12px auto;
+}
+.title_head>p {
+    font-size: 1em;
+    color: #b7b3b3;
+    font-family: "Roboto";
+}
+
+#what, .col {
+    margin-top: 25px;
+}
+
+.img {
+    display: inline-block;
+    padding: 34px 29px;
+    background: #e0f3e0;
+    border-radius: 21px;
+}
+
+.col>h3 {
+    font-size: 700 1.5em "Roboto";
+    color: #828181;
+    margin: 8px 0;
+}
+
+.col>p {
+    font-size: 300 .9em "Montserrat";
+    color: #828181;
+}
 
 
 @media only screen and (min-width: 768px) {
@@ -99,8 +145,9 @@ form button {
         display: flex;
     }
     #menu li {
-        padding-left: 20px;
+        padding-left: 10px;
         position: relative;
+        padding-right: 10px;
     }
     #menu li::before {
         content: "";
@@ -119,8 +166,8 @@ form button {
         font-size: 3.5em;
     }
     .what_we_do {
-        height: 575px;
-        padding: 55px 0;
+        /* height: 575px; */
+        padding: 55px 10px;
     }
     .container {
         max-width: 980px;
@@ -129,31 +176,10 @@ form button {
     }
     .row {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
-    }
-    .title_head {
-        text-align: center;
-    }
-    .title_head > h2 {
-        font: 300 1.2em Montserrat;
-        word-spacing: 4px;
-        color: #828181;
-        position: relative;
-        text-transform: uppercase;
-    }
-    .title_head > h2::before {
-        text-align: center;
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 20px;
-        height: 2px;
-        background: #000;
     }
     #what {
         display: flex;
@@ -162,8 +188,7 @@ form button {
         margin-top: 80px;
     }
     .col {
+        flex-basis: 250px;
         text-align: center;
-        flex: 1 0 200px;
-        
     }
 }
