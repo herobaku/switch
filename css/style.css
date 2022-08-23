@@ -191,4 +191,8 @@ form button {
         flex-basis: 250px;
         text-align: center;
     }
+    .work {
+        padding: 43px 0 53px 0;
+        background: var(--green);
+    }
 }
