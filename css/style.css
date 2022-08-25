@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap');
+
 :root {
     --white: #fff;
     --green: #53d153;
@@ -43,7 +44,8 @@ form {
     display: flex;
 }
 
-form input, form button{
+form input,
+form button {
     border: 0;
     padding: 5px 10px;
 }
@@ -51,8 +53,8 @@ form input, form button{
 #title>h1 {
     font: 700 2em Montserrat;
     color: var(--white);
-    margin-bottom: 40px;
 }
+
 #title>button {
     border: 0;
     padding: 15px 24px;
@@ -62,18 +64,23 @@ form input, form button{
     background: var(--green);
     border-radius: 21px;
     text-transform: uppercase;
+    margin: 4vh 0;
 }
+
 form input {
     border-radius: 1em 0 0 1em;
 }
+
 form input::placeholder {
     font-weight: 700;
 }
+
 form button {
     border-radius: 0 1em 1em 0;
     display: flex;
     align-items: center;
 }
+
 .scroll {
     border: 0;
     background: #bfbdbd;
@@ -82,6 +89,7 @@ form button {
     border-radius: 12px;
     padding: 5px 16px;
 }
+
 /* end */
 
 /* begin  what we do*/
@@ -89,28 +97,33 @@ form button {
 #what_we_do {
     padding: 25px 15px;
 }
+
 .title_head {
     text-align: center;
 }
-.title_head > h2 {
+
+.title_head>h2 {
     font: 300 1.2em Montserrat;
     word-spacing: 4px;
     color: #828181;
     text-transform: uppercase;
 }
+
 .line {
     width: 43px;
     height: 2px;
     background: #818181;
     margin: 12px auto;
 }
+
 .title_head>p {
     font-size: 1em;
     color: #b7b3b3;
     font-family: "Roboto";
 }
 
-#what, .col {
+#what,
+.col {
     margin-top: 25px;
 }
 
@@ -137,31 +150,87 @@ form button {
 
 /* our latest work */
 
+#work {
+    padding: 25px 10px;
+    background: var(--green);
+}
+
 .title_head_green h2 {
     color: #207b20;
 }
+
 .title_head_green>p {
     color: #2b9b2b;
+}
+
+.title_head_green>.line {
+    background: #1f7b1f !important;
+}
+
+#multiple_button {
+    margin: 25px 0;
+}
+
+#multiple_button_unite {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#multiple_button_unite>.button {
+    border: 1px solid #2b9b2b;
+    padding: 8px 0;
+    border-radius: 10px;
+    margin: 1px 0;
+    background: #fff;
+    font: 1em "Roboto";
+    color: #2b9b2b;
+}
+
+#multiple_button_unite>.active {
+    background: #2b9b2b;
+    color: var(--white);
+}
+
+#working_picture {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.picture {
+    padding: 0 15px 15px 0;
+}
+
+.picture>img {
+    height: 160px;
+    width: 160px;
+    object-fit: cover;
 }
 
 @media only screen and (min-width: 768px) {
     header {
         padding: 10px 30px;
     }
+
     nav {
         display: flex;
         width: 100%;
         justify-content: space-between;
         align-items: center;
     }
+
     #menu {
         display: flex;
     }
+
     #menu li {
         padding-left: 10px;
         position: relative;
         padding-right: 10px;
     }
+
     #menu li::before {
         content: "";
         position: absolute;
@@ -172,39 +241,84 @@ form button {
         height: 5px;
         background: var(--green);
     }
+
     #menu li:hover::before {
         width: 100%;
     }
+
     #title>h1 {
         font-size: 3.5em;
     }
+
     #what_we_do {
         padding: 43px 10px 73px;
     }
+
     .container {
         max-width: 980px;
         width: 100%;
         margin: auto;
     }
+
     .row {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
         align-items: center;
         flex-direction: column;
     }
+
     #what {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-top: 80px;
     }
+
     .col {
         flex-basis: 250px;
         text-align: center;
     }
-    .work {
+
+    #work {
         padding: 43px 0 53px 0;
-        background: var(--green);
+    }
+
+    #multiple_button {
+        margin: 60px 0;
+        cursor: pointer;
+    }
+
+    #multiple_button_unite {
+        flex-direction: row;
+    }
+
+    #multiple_button_unite>.button {
+        padding: 8px 19px;
+        border-radius: 0;
+    }
+
+    #multiple_button_unite>.button:first-of-type {
+        border-radius: 1em 0 0 1em;
+    }
+
+    #multiple_button_unite>.button:last-of-type {
+        border-radius: 0 1em 1em 0;
+    }
+
+
+    #working_picture {
+        padding: 0 30px;
+        justify-content: space-between;
+    }
+
+    .picture {
+        padding: 0;
+        padding-bottom: 30px;
+    }
+    
+    .picture>img {
+        height: 160px;
+        width: 160px;
+        object-fit: cover;
     }
 }
