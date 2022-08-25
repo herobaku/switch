@@ -84,7 +84,9 @@ form button {
 }
 /* end */
 
-.what_we_do {
+/* begin  what we do*/
+
+#what_we_do {
     padding: 25px 15px;
 }
 .title_head {
@@ -131,6 +133,17 @@ form button {
 }
 
 
+/* end */
+
+/* our latest work */
+
+.title_head_green h2 {
+    color: #207b20;
+}
+.title_head_green>p {
+    color: #2b9b2b;
+}
+
 @media only screen and (min-width: 768px) {
     header {
         padding: 10px 30px;
@@ -165,9 +178,8 @@ form button {
     #title>h1 {
         font-size: 3.5em;
     }
-    .what_we_do {
-        /* height: 575px; */
-        padding: 55px 10px;
+    #what_we_do {
+        padding: 43px 10px 73px;
     }
     .container {
         max-width: 980px;
