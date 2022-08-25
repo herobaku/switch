@@ -305,7 +305,6 @@ form>button {
         border-radius: 0 1em 1em 0;
     }
 
-
     #working_picture {
         padding: 0 30px;
         justify-content: space-between;
@@ -321,4 +320,8 @@ form>button {
         width: 160px;
         object-fit: cover;
     }
+}
+
+@media only screen and (max-width: 600px) {
+
 }
