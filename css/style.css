@@ -144,8 +144,6 @@ main>section {
     color: var(--white);
 }
 
-
-
 #buttons button:first-of-type { border-radius: 1em 0 0 1em; }
 #buttons button:last-of-type { border-radius: 0 1em 1em 0; }
 
@@ -161,22 +159,24 @@ main>section {
     border-radius: 27px;
 }
 
+#pictures img {
+    width: 100%;
+    margin: 15px 0;
+}
+
 @media only screen and (min-width: 768px) {
     header {
         padding: 10px 30px;
     }
-
     nav {
         display: flex;
         width: 100%;
         justify-content: space-between;
         align-items: center;
     }
-
     #menu {
         display: flex;
     }
-
     #menu li {
         padding-left: 10px;
         position: relative;
@@ -188,5 +188,17 @@ main>section {
     }
     #article article {
         padding: 24px 30px;
+    }
+    #pictures {
+        max-width: 920px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #pictures img {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        margin: 10px;
     }
 }
