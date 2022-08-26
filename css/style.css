@@ -164,6 +164,31 @@ main>section {
     margin: 15px 0;
 }
 
+.button_work {
+}
+
+.button_work button {
+    background: #2b9b2b;
+    color: #fff;
+    font: 1.2em Roboto;
+    padding: 12px 19px 14px 19px;
+    border-radius: 17px;
+    border: 0;
+    margin-right: 25px;
+}
+
+#brand {
+    padding: 15px 0;
+}
+
+#brand img{
+    height: 80px;
+    width: 100%;
+    margin: 10px 0;
+    object-fit: contain;
+    filter: grayscale(1);
+}
+
 @media only screen and (min-width: 768px) {
     header {
         padding: 10px 30px;
@@ -194,11 +219,22 @@ main>section {
         margin: auto;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     #pictures img {
         width: 160px;
         height: 160px;
         object-fit: cover;
         margin: 10px;
+    }
+    #brand {
+        padding: 87px 0 60px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #brand img {
+        max-width: 150px;
+        margin: 0 110px;
     }
 }
