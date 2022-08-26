@@ -2,7 +2,8 @@
 
 :root {
     --white: #fff;
-    --green: #53d153;
+    --green: #54d154;
+    --gray: #f2f1f1;
 }
 
 * {
@@ -49,9 +50,28 @@ form>button {
     padding: 5px 10px;
 }
 
-#title>h1 {
+h1 {
     font: 700 2em Montserrat;
     color: var(--white);
+}
+
+h2 {
+    font: 300 1.25em Montserrat;
+    letter-spacing: 4px;
+    color: #828181;
+    text-transform: uppercase;
+}
+
+h6 {
+    font: 1em Roboto;
+    color: #b7b3b3;
+}
+
+hr {
+    width: 43px;
+    border: 0;
+    border-top: 2px solid #818181;
+    margin: 10px auto;
 }
 
 #title>button {
@@ -89,6 +109,58 @@ form>button {
     padding: 5px 16px;
 }
 
+.bg-white { background: var(--white); }
+.bg-green { background: var(--green); }
+.bg-gray { background: var(--gray); }
+
+.bg-green>h2 { color: #207b20; }
+.bg-green>hr { border-top: 2px solid #1f7b1f }
+.bg-green>h6 { color: #2b9b2b }
+
+main>section {
+    text-align: center;
+    padding: 2em;
+}
+
+#article article {
+    padding: 25px 0;
+}
+
+#buttons {
+    padding: 58px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#buttons button {
+    background: var(--white);
+    color: #2b9b2b;
+    padding: 10px 21px;
+    border: 1px solid #2b9b2b;
+}
+
+#buttons button.active, #buttons button:hover {
+    background: #2b9b2b;
+    color: var(--white);
+}
+
+
+
+#buttons button:first-of-type { border-radius: 1em 0 0 1em; }
+#buttons button:last-of-type { border-radius: 0 1em 1em 0; }
+
+#article article span {
+    width: 142px;
+    height: 142px;
+    font-size: 5.4em;
+    background: #e0f3e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 27px;
+}
+
 @media only screen and (min-width: 768px) {
     header {
         padding: 10px 30px;
@@ -109,5 +181,12 @@ form>button {
         padding-left: 10px;
         position: relative;
         padding-right: 10px;
-    } 
+    }
+    #article {
+        display: flex;
+        padding: 24px 0;
+    }
+    #article article {
+        padding: 24px 30px;
+    }
 }
