@@ -186,6 +186,10 @@ main>section {
     filter: grayscale(1);
 }
 
+#brand img:hover {
+    filter: grayscale(0);
+}
+
 .bg-gray > .button_work button {
     background: #dddcdc;
     font: 1.2em Roboto;
@@ -201,6 +205,9 @@ main>section {
 @media only screen and (min-width: 768px) {
     header {
         padding: 10px 30px;
+    }
+    h1 {
+        font-size: 3.4em;
     }
     nav {
         display: flex;
@@ -247,6 +254,6 @@ main>section {
         margin: 0 110px;
     }
     .button_work {
-        padding-bottom: calc(60px - 32px);
+        padding-bottom: 28px;
     }
 }
