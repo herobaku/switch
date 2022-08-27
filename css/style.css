@@ -164,9 +164,6 @@ main>section {
     margin: 15px 0;
 }
 
-.button_work {
-}
-
 .button_work button {
     background: #2b9b2b;
     color: #fff;
@@ -187,6 +184,18 @@ main>section {
     margin: 10px 0;
     object-fit: contain;
     filter: grayscale(1);
+}
+
+.bg-gray > .button_work button {
+    background: #dddcdc;
+    font: 1.2em Roboto;
+    color: #a59d9d;
+    padding: 12px 33px 12px 55px;
+}
+
+.bg-gray > .button_work button i {
+    margin-right: 15px;
+    float: right;
 }
 
 @media only screen and (min-width: 768px) {
@@ -236,5 +245,8 @@ main>section {
     #brand img {
         max-width: 150px;
         margin: 0 110px;
+    }
+    .button_work {
+        padding-bottom: calc(60px - 32px);
     }
 }
