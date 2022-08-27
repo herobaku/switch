@@ -257,6 +257,81 @@ main>section {
     text-align: left;
 }
 
+footer {
+    height: 100vh;
+}
+
+.meet-flex {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.meet-flex h6 {
+    color: var(--white);
+    margin-bottom: 14px;
+}
+
+.meet {
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.meet span {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background: var(--white);
+    overflow: hidden;
+}
+
+.meet span img {
+    object-fit: cover;
+    height: 100%;
+    padding-top: 15px;
+}
+
+.meet hr {
+    width: 2px;
+    height: 77px;
+    background: #1f7b1f;
+}
+
+.social {
+    display: flex;
+    background: #c5e9c5;
+    padding: 4px 5px;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.sprite { background: url('../image/sprite.png') no-repeat top left; width: 20px; height: 20px; margin: 0 10px; } 
+.sprite.twitter { background-position: 0 0; } 
+.sprite.behance { background-position: -25px 0; } 
+.sprite.dribble { background-position: -50px 0; } 
+
+.section {
+    background: #3eba3e;
+    padding: 25px 0;
+}
+
+.section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section div button {
+    border: 0;
+    text-transform: uppercase;
+    padding: 13px 21px;
+    border-radius: 17px;
+}
+
 @media only screen and (min-width: 768px) {
     header {
         padding: 10px 30px;
@@ -310,5 +385,12 @@ main>section {
     }
     .button_work {
         padding-top: 28px;
+    }
+    .meet-flex {
+        padding: 20px 0;
+        flex-direction: row;
+    }
+    .meet {
+        padding: 20px 10px;
     }
 }
