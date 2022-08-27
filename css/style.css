@@ -202,6 +202,61 @@ main>section {
     float: right;
 }
 
+#testimonials {
+    margin-top: 72px;
+}
+
+#testimonials article {
+    max-width: 790px;
+    margin: auto;
+    position: relative;
+}
+
+#testimonials article i {
+    position: absolute;
+    top: 0;
+}
+
+#testimonials article i:first-of-type {
+    left: -2.1vh;
+}
+
+#testimonials article i:last-of-type {
+    right: -2.1vh;
+}
+
+#testimonial article i {
+    font-size: 2em;
+}
+
+#testimonials article p {
+    font: 1em Roboto;
+    color: #444444;
+}
+
+#ceo {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #e1e1e1;
+    padding: 5px 6px;
+    border-radius: 50%;
+}
+
+.circle img {
+    width: 100%;
+}
+
+.right {
+    text-align: left;
+}
+
 @media only screen and (min-width: 768px) {
     header {
         padding: 10px 30px;
@@ -250,7 +305,7 @@ main>section {
         justify-content: center;
     }
     #brand img {
-        max-width: 150px;
+        max-width: 100px;
         margin: 0 110px;
     }
     .button_work {
