@@ -116,6 +116,7 @@ form>button {
 .bg-green>h2 { color: #207b20; }
 .bg-green>hr { border-top: 2px solid #1f7b1f }
 .bg-green>h6 { color: #2b9b2b }
+.bg-darkGray { background: #333; }
 
 main>section {
     text-align: center;
@@ -159,6 +160,27 @@ main>section {
     border-radius: 27px;
 }
 
+#article article h3 {
+    font: 700 1.5em Roboto;
+    color: #828181;
+    margin: 27px 0 23px;
+}
+
+#article article p {
+    font: 300 15px Montserrat;
+    color: #828181;
+    margin-bottom: 29px;
+}
+
+#article article button {
+    font: 700 1em Roboto;
+    color: var(--white);
+    background: #53d153;
+    border: 0;
+    padding: 9px 19px 10px 20px;
+    border-radius: 14px;
+}
+
 #pictures img {
     width: 100%;
     margin: 15px 0;
@@ -166,7 +188,7 @@ main>section {
 
 .button_work button {
     background: #2b9b2b;
-    color: #fff;
+    color: var(--white);
     font: 1.2em Roboto;
     padding: 12px 19px 14px 19px;
     border-radius: 17px;
@@ -184,10 +206,6 @@ main>section {
     margin: 10px 0;
     object-fit: contain;
     filter: grayscale(1);
-}
-
-#brand img:hover {
-    filter: grayscale(0);
 }
 
 .bg-gray > .button_work button {
@@ -257,10 +275,6 @@ main>section {
     text-align: left;
 }
 
-footer {
-    height: 100vh;
-}
-
 .meet-flex {
     padding: 20px 0;
     display: flex;
@@ -302,14 +316,13 @@ footer {
 }
 
 .social {
-    display: flex;
+    display: inline-flex;
     background: #c5e9c5;
     padding: 4px 5px;
     border-radius: 12px;
-    align-items: center;
 }
 
-.sprite { background: url('../image/sprite.png') no-repeat top left; width: 20px; height: 20px; margin: 0 10px; } 
+.sprite { background: url('../image/sprite.png') no-repeat top left; width: 20px; height: 20px; margin: 0 5px; } 
 .sprite.twitter { background-position: 0 0; } 
 .sprite.behance { background-position: -25px 0; } 
 .sprite.dribble { background-position: -50px 0; } 
@@ -332,9 +345,128 @@ footer {
     border-radius: 17px;
 }
 
+footer {
+    padding: 10px 0 0 0;
+}
+
+footer>section {
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer>section>article> p {
+    font: 1em/1.3 Roboto;
+    color: #cccccc;
+}
+
+.post {
+    display: flex;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.post:last-child {
+    margin: 0;
+}
+
+.image {
+    width: 53px;
+    height: 53px;
+    margin-right: 15px;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text h5 {
+    font-size: 300 1em Montserrat;
+    color: #cccccc;
+}
+
+.text button {
+    margin-top: 5px;
+    border: 0;
+    padding: 5px 8px 5px 6px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+address p {
+    font-size: 300 .8em Roboto;
+    color: #cccccc;
+}
+
+#form {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+}
+
+#form input, #form textarea {
+    margin: 2px 0;
+    padding: 11px 0 10px 14px;
+    border: 0;
+    background: #434343;
+}
+
+#form input {
+    border-radius: 0;
+}
+
+#form input[type="submit"] {
+    padding: 11px 0;
+    margin: 0;
+    background: #2b9b2b;
+    font: 14px Roboto;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+#form textarea {
+    height: 131px;
+}
+
+#form>input::placeholder, #form>textarea::placeholder  {
+    font: 1em Roboto;
+    color: #777777;
+}
+
+#copyright {
+    text-align: center;
+    color: #fff;
+    background: #111;
+    padding: 11px 0 9px;
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+}
+
+#brand-logo {
+    text-align: center;
+    padding: 26px 0 28px;
+    background: #212121;
+}
+
+.brand-logo-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#brand-logo img {
+    filter: contrast(0);
+    height: 47px;
+    display: block;
+    margin: 10px 0;
+}
+
 @media only screen and (min-width: 768px) {
     header {
-        padding: 10px 30px;
+        padding: 0 30px;
     }
     h1 {
         font-size: 3.4em;
@@ -350,8 +482,14 @@ footer {
     }
     #menu li {
         padding-left: 10px;
-        position: relative;
         padding-right: 10px;
+    }
+    #menu li a {
+        padding: 5px 0;
+        border-top: 5px solid transparent;
+    }
+    #menu li a:hover {
+        border-top: 5px solid green;
     }
     #article {
         display: flex;
@@ -392,5 +530,20 @@ footer {
     }
     .meet {
         padding: 20px 10px;
+    }
+    footer>section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer>section>article {
+        flex-basis: 20vw;
+        padding: 0 30px;
+    }
+    .brand-logo-img>img {
+        margin: 0 3vw!important;
+    }
+    .brand-logo-img {
+        flex-direction: row;
     }
 }
