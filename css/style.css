@@ -183,7 +183,8 @@ main>section {
 
 #pictures img {
     width: 100%;
-    margin: 15px 0;
+    height: auto;
+    object-fit: cover;
 }
 
 .button_work button {
@@ -464,6 +465,12 @@ address p {
     margin: 10px 0;
 }
 
+#pictures {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
 @media only screen and (min-width: 768px) {
     header {
         padding: 0 30px;
@@ -501,15 +508,12 @@ address p {
     #pictures {
         max-width: 920px;
         margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: 160px 160px;
+        gap: 10px 30px;
     }
-    #pictures img {
-        width: 160px;
-        height: 160px;
-        object-fit: cover;
-        margin: 10px;
+    #pictures > img {
+        height: 100%;
     }
     #brand {
         padding: 87px 0 60px 0;
